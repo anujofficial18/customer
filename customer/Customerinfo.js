@@ -5,17 +5,18 @@ import Personalinfo from "./Personalinfo";
 import Wishinfo from "./Wishinfo";
 
 export default function Customerinfo() {
-    const [showprsnl, changeShowpersonaldetail] = useState(false)
+    const [showprsnl, changeShowpersonaldetail] = useState(true)
     const [showorder, changeShoworderdetail] = useState(false)
     const [showwish, changeShowwishdetail] = useState(false)
     return (
-        <div>
+        <div className="">
             <Header />
-            <div className="d-flex">
-                <div className=" border-right p-0">
+           
+            <div className="d-flex ">
+                <div className=" p-0 leftnav">
                     
                     <p className="m-0 ">
-                        <a class="btn btn-outline-Dark  text-uppercase border-bottom w-100 text-left" data-bs-toggle="collapse" href="#collapsecategori" role="button" aria-expanded="false" aria-controls="collapsecategori"
+                        <a class="btn btn-outline-Dark  text-uppercase  w-100 text-left" data-bs-toggle="collapse" href="#collapsecategori" role="button" aria-expanded="false" aria-controls="collapsecategori"
                             onClick={() => {
 
                                 changeShoworderdetail(false)
@@ -32,7 +33,7 @@ export default function Customerinfo() {
 
 
                     <p className="m-0 ">
-                        <a class="btn btn-outline-Dark  text-uppercase border-bottom w-100 text-left" data-bs-toggle="collapse" href="#collapsecategori" role="button" aria-expanded="false" aria-controls="collapsecategori"
+                        <a class="btn btn-outline-Dark  text-uppercase  w-100 text-left" data-bs-toggle="collapse" href="#collapsecategori" role="button" aria-expanded="false" aria-controls="collapsecategori"
                             onClick={() => {
 
                                 changeShoworderdetail(true)
@@ -44,7 +45,7 @@ export default function Customerinfo() {
                     </p>
                    
                     <p className="m-0 ">
-                        <a class="btn btn-outline-Dark  text-uppercase border-bottom w-100 text-left" data-bs-toggle="collapse" href="#collapsecategori" role="button" aria-expanded="false" aria-controls="collapsecategori"
+                        <a class="btn btn-outline-Dark  text-uppercase  w-100 text-left" data-bs-toggle="collapse" href="#collapsecategori" role="button" aria-expanded="false" aria-controls="collapsecategori"
                             onClick={() => {
 
                                 changeShoworderdetail(false)
@@ -55,14 +56,16 @@ export default function Customerinfo() {
                         </a>
                     </p>
                 </div>
-                
-                <div className="col-md-9">
+
+                <div className="col-md-10 ">
                     {showorder && <Orderinfo />}
 
                     {showwish && <Wishinfo />}
                     {showprsnl && <Personalinfo />}
                 </div>
             </div>
-        </div>
+    
+            </div>
+              
     )
 }

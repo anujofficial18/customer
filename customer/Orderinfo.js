@@ -3,8 +3,8 @@ import React from 'react'
 export default function Orderinfo() {
     return (
         <div >
-                <p className="h4 border-bottom ml-5 p-3">orders</p>
-                    <div className="col-md-12   d-flex offset-1 shadow bg-white">
+                <p className="h4 border-bottom  p-2 h3">orders</p>
+                    <div className="col-md-12   d-flex  shadow bg-white">
                         <div className=" col-md-2 item-img p-3 ">
                         <img src="http://source.unsplash.com/random/100x100"></img>
 
@@ -22,7 +22,7 @@ export default function Orderinfo() {
                         </div>
                     </div>
               
-                    <div className="col-md-12  mt-3  d-flex offset-1 shadow bg-white">
+                    <div className="col-md-12  mt-3  d-flex  shadow bg-white">
                         <div className=" col-md-2 item-img p-3 ">
                         <img src="http://source.unsplash.com/random/100x100"></img>
 

@@ -7,7 +7,7 @@ export default function Customer() {
         <Structure>
             <div className="row">
 
-                <div className="col-md-12 d-flex ">
+                <div className="col-md-12 pl-0 d-flex ">
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>

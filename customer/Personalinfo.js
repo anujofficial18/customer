@@ -3,7 +3,7 @@ import React from 'react'
 export default function Personalinfo() {
     return (
         <div>
-            <div className="col-md-12">
+            <div className="col-md-12 p-0">
                <div>
                 <p className="p-3 h4 text-capitalize">personal information</p>
                 <hr/>

@@ -4,9 +4,10 @@ export default function Wishinfo() {
     return (
         <div>
              <div className="wish">
-                        <h2 className="text-center">  whishlist</h2>
-                <div className="row ">
-                    <div className="col-md-10 d-flex offset-1 shadow bg-white">
+                        <h2 className="mt-3">  whishlist</h2>
+                        <hr/>
+                <div className="row p-3 ">
+                    <div className="col-md-12 d-flex   shadow bg-white">
                         <div className=" col-md-3 item-img p-3 ">
                         <img src="http://source.unsplash.com/random/100x100"></img>
 
@@ -19,7 +20,6 @@ export default function Wishinfo() {
                         </div>
                         <div className="col-md-6 text-right mt-5">
 
-                        <button class=" btn px-0 text-primary">Remove</button>
                         </div>
 
                        
